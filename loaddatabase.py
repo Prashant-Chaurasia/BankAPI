@@ -1,6 +1,6 @@
 import psycopg2
 import csv
-from .RESTbank import keys
+from RESTbank import keys
 
 conn = psycopg2.connect("host="+keys.DB_HOST+" dbname="+keys.DB_NAME +
                         " user="+keys.DB_USER+ " password="+keys.DB_PASS)

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d64749-8c66-4d08-8d36-3ca5532675b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTbank/settings.py" afterPath="$PROJECT_DIR$/RESTbank/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loaddatabase.py" afterPath="$PROJECT_DIR$/loaddatabase.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RESTbank/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1332">
-              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="-2">
+              <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
               <folding>
                 <element signature="e#313#322#0" expanded="true" />
               </folding>
@@ -39,16 +39,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loaddatabase.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="loaddatabase.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loaddatabase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="35">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1524569933482" expanded="true" signature="233:275" ph="DROP TABLE I... " />
-                <marker date="1524569933482" expanded="true" signature="308:693" ph="CREATE TABLE... bank_branches" />
-                <marker date="1524569933482" expanded="true" signature="843:906" ph="INSERT INTO bank_branches... " />
+                <marker date="1524572186691" expanded="true" signature="232:274" ph="DROP TABLE I... " />
+                <marker date="1524572186691" expanded="true" signature="307:692" ph="CREATE TABLE... bank_branches" />
+                <marker date="1524572186691" expanded="true" signature="842:905" ph="INSERT INTO bank_branches... " />
               </folding>
             </state>
           </provider>
@@ -160,9 +160,9 @@
         <option value="$PROJECT_DIR$/bankapi/exception_handler.py" />
         <option value="$PROJECT_DIR$/bankapi/views.py" />
         <option value="$PROJECT_DIR$/RESTbank/keys.py" />
-        <option value="$PROJECT_DIR$/loaddatabase.py" />
         <option value="$PROJECT_DIR$/RESTbank/wsgi.py" />
         <option value="$PROJECT_DIR$/RESTbank/settings.py" />
+        <option value="$PROJECT_DIR$/loaddatabase.py" />
       </list>
     </option>
   </component>
@@ -174,9 +174,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="683" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -294,7 +294,7 @@
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46624804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -619,19 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loaddatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1524569933482" expanded="true" signature="233:275" ph="DROP TABLE I... " />
-            <marker date="1524569933482" expanded="true" signature="308:693" ph="CREATE TABLE... bank_branches" />
-            <marker date="1524569933482" expanded="true" signature="843:906" ph="INSERT INTO bank_branches... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RESTbank/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -644,10 +631,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RESTbank/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1332">
-          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="-2">
+          <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
           <folding>
             <element signature="e#313#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loaddatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1524572186691" expanded="true" signature="232:274" ph="DROP TABLE I... " />
+            <marker date="1524572186691" expanded="true" signature="307:692" ph="CREATE TABLE... bank_branches" />
+            <marker date="1524572186691" expanded="true" signature="842:905" ph="INSERT INTO bank_branches... " />
           </folding>
         </state>
       </provider>
