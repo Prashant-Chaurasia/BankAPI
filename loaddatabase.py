@@ -1,6 +1,9 @@
 import psycopg2
 import csv
-conn = psycopg2.connect("host=localhost dbname=bank user=bank password=bank")
+from .RESTbank import keys
+
+conn = psycopg2.connect("host="+keys.DB_HOST+" dbname="+keys.DB_NAME +
+                        " user="+keys.DB_USER+ " password="+keys.DB_PASS)
 cur = conn.cursor()
 cur.execute("DROP TABLE IF EXISTS bank_branches CASCADE ")
 

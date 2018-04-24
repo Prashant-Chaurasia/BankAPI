@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from . import keys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'wzimrtu!7%ld4qxjg3rb0_xq@*enkgr!fh%k+z)hl6q-9)=#xo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = keys.DEBUG_STATUS
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = [keys.ALLOWED_HOST]
 
 
 # Application definition
@@ -85,15 +86,14 @@ WSGI_APPLICATION = 'RESTbank.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bank',
-        'USER': 'bank',
-        'PASSWORD': 'bank',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': keys.DB_NAME,
+        'USER': keys.DB_USER,
+        'PASSWORD': keys.DB_PASS,
+        'HOST': keys.DB_HOST,
+        'PORT': keys.DB_PORT,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
