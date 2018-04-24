@@ -1,1 +1,1 @@
-web: gunicorn Eventus.wsgi --log-file -
+web: gunicorn RESTbank.wsgi --log-file -
